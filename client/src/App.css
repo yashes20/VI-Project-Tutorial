@@ -1,0 +1,89 @@
+.App {
+  text-align: center;
+}
+
+#root {
+  background-color: rgb(236, 236, 236);
+}
+
+.App-header {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.recharts-wrapper {
+  margin: auto;
+}
+
+.box1 {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1vh;
+}
+
+.custom-chart {
+  flex-direction: row;
+}
+
+.pie-chart {
+  width: 19%;
+}
+
+.bar-chart,
+.scatter-chart {
+  width: 24%;
+}
+
+.cardinal-area-chart {
+  width: 60%;
+}
+
+.radial-pie-chart {
+  width: 38%;
+}
+
+@media (max-width: 1290px) {
+  .custom-chart {
+    flex-direction: column !important;
+  }
+
+  .pie-chart,
+  .bar-chart,
+  .scatter-chart,
+  .radial-pie-chart,
+  .cardinal-area-chart {
+    width: 60%;
+  }
+
+  .box1 {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.show-chart {
+  background-color: rgb(244, 246, 248);
+  padding: 2vh;
+  border: 1px solid rgb(211, 211, 211);
+}
+
+.title-paragraph {
+  margin: 0 0 1vh 0;
+  font-size: 20px;
+  text-align: center;
+}
+
+.bold {
+  font-weight: 500;
+}
+
+.filter-box {
+  background-color: rgb(234, 244, 255);
+  border: 1px solid rgb(206, 229, 253);
+  padding: 1vh;
+  font-size: 13px;
+}
